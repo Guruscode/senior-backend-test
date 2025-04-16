@@ -1,0 +1,57 @@
+banking-ledger-system/
+├── .env
+├── .eslintrc.js
+├── .gitignore
+├── .prettierrc
+├── jest.config.js
+├── package.json
+├── tsconfig.json
+├── src/
+│   ├── app.ts
+│   ├── server.ts
+│   ├── config/
+│   │   ├── db.ts
+│   │   ├── env.ts
+│   │   ├── logger.ts
+│   │   └── swagger.ts
+│   ├── controllers/
+│   │   ├── account.controller.ts
+│   │   ├── auth.controller.ts
+│   │   └── transaction.controller.ts
+│   ├── interfaces/
+│   │   ├── account.interface.ts
+│   │   ├── auth.interface.ts
+│   │   ├── transaction.interface.ts
+│   │   └── user.interface.ts
+│   ├── middlewares/
+│   │   ├── auth.middleware.ts
+│   │   ├── error.middleware.ts
+│   │   └── validation.middleware.ts
+│   ├── models/
+│   │   ├── account.model.ts
+│   │   ├── transaction.model.ts
+│   │   ├── ledgerEntry.model.ts
+│   │   └── user.model.ts
+│   ├── routes/
+│   │   ├── account.routes.ts
+│   │   ├── auth.routes.ts
+│   │   ├── index.ts
+│   │   └── transaction.routes.ts
+│   ├── services/
+│   │   ├── account.service.ts
+│   │   ├── auth.service.ts
+│   │   └── transaction.service.ts
+│   ├── utils/
+│   │   ├── apiError.ts
+│   │   ├── apiResponse.ts
+│   │   ├── generateAccountNumber.ts
+│   │   └── transactionReference.ts
+│   └── validations/
+│       ├── account.validation.ts
+│       ├── auth.validation.ts
+│       └── transaction.validation.ts
+├── test/
+│   ├── integration/
+│   └── unit/
+├── docker-compose.yml
+└── Dockerfile
